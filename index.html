@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penghitung WR Mobile Legends</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Penghitung WR Mobile Legends</h1>
+        <div class="form-group">
+            <label for="totalMatch">Total Match Anda:</label>
+            <input type="number" id="totalMatch" placeholder="Masukkan total match" required>
+        </div>
+        <div class="form-group">
+            <label for="totalWR">Total WR Anda (%):</label>
+            <input type="number" id="totalWR" placeholder="Masukkan WR Anda saat ini" step="0.01" required>
+        </div>
+        <div class="form-group">
+            <label for="targetWR">WR yang Diinginkan (%):</label>
+            <input type="number" id="targetWR" placeholder="Masukkan WR yang diinginkan" step="0.01" required>
+        </div>
+        <button onclick="hitungWR()">Hitung Kemenangan Diperlukan</button>
+        <div id="hasil"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
